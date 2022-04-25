@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0611ace-66a9-4896-a2fb-fd4d4a964fba" name="Changes" comment="creating Monsters and Hero Classes with some instances">
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Battle/Fight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Battle/GeneralStory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Battle/Potion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Monster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Monster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Battle/Hero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Monster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Battle/Monster.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,17 +35,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Team Reno/IdeaProjects/EpicGame&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/Team Reno/IdeaProjects/ScannerKeyboardTest/src/Battle",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
-}</component>
-  <component name="RunManager" selected="Application.Monster">
+}]]></component>
+  <component name="RunManager" selected="Application.GeneralStory">
+    <configuration name="GeneralStory" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Battle.GeneralStory" />
+      <module name="EpicGame" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Battle.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Hero" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Hero" />
       <module name="EpicGame" />
@@ -57,6 +77,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GeneralStory" />
         <item itemvalue="Application.Monster" />
         <item itemvalue="Application.Hero" />
       </list>
@@ -78,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650581484557</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="creating Monsters and Hero Classes with some instances">
+      <created>1650614650222</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1650614650222</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
