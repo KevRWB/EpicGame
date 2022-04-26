@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e0611ace-66a9-4896-a2fb-fd4d4a964fba" name="Changes" comment="To Fix calling &quot;ShowHero&quot; method ?!?">
-      <change afterPath="$PROJECT_DIR$/src/Battle/RollD10.java" afterDir="false" />
+    <list default="true" id="e0611ace-66a9-4896-a2fb-fd4d4a964fba" name="Changes" comment="New Features on GeneralStory class (Hero selection)&#10;To keep going on random selection for monsters">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Battle/Fight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Battle/Fight.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Battle/GeneralStory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Battle/GeneralStory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Battle/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Battle/Hero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Battle/Monster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Battle/Monster.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650923718802</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="New Features on GeneralStory class (Hero selection)&#10;To keep going on random selection for monsters">
+      <created>1650966409328</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1650966409329</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -156,6 +159,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="creating Monsters and Hero Classes with some instances" />
     <MESSAGE value="To Fix calling &quot;ShowHero&quot; method ?!?" />
-    <option name="LAST_COMMIT_MESSAGE" value="To Fix calling &quot;ShowHero&quot; method ?!?" />
+    <MESSAGE value="New Features on GeneralStory class (Hero selection)&#10;To keep going on random selection for monsters" />
+    <option name="LAST_COMMIT_MESSAGE" value="New Features on GeneralStory class (Hero selection)&#10;To keep going on random selection for monsters" />
   </component>
 </project>

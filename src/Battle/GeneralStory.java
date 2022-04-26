@@ -52,11 +52,11 @@ public class GeneralStory {
     //Initialization of Monsters
     private static List<Monster> initMonsters(){
         List<Monster> monsters = new ArrayList<>();
-        Monster zombie = new Monster(1,"Zombie", 30, 60,60);
+        Monster zombie = new Monster(0,"Zombie", 30, 60,60);
         monsters.add(zombie);
-        Monster bat = new Monster(2,"Bat", 10,10,20);
+        Monster bat = new Monster(0,"Bat", 10,10,20);
         monsters.add(bat);
-        Monster wolf = new Monster(3,"Wolf", 60, 40, 40);
+        Monster wolf = new Monster(0,"Wolf", 60, 40, 40);
         monsters.add(wolf);
 
         return monsters;
@@ -74,15 +74,21 @@ public class GeneralStory {
     //TO END /!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\
     private void randomMonstersTurn(final List<Monster> monsters){
         int monsterCount = 0;
-        int randomId = 0;
         for(Monster monster : monsters){
             monsterCount++;
         }
-        randomId = (int)(Math.random()*(monsterCount)+1);
+        for(Monster monster : monsters){
+           int randomId = (int)(Math.random()*(monsterCount)+1);
+           if(monster.id == 0 && monster.id != randomId){
+               monster.id = randomId;
+               System.out.println(monster.id + "/ " + monster.name + ": " + " Attaque : " + monster.att + ", Defense : " + monster.def + ", Vie : " + monster.health);
+           }
+        }
 
 
     }
 
+    //Select Hero Method
     private void selectHero(int heroChoice){
         switch (heroChoice){
             case 1 : heroSelected = initHeroes().get(0);
