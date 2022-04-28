@@ -1,13 +1,8 @@
 package Battle;
 
-import javax.lang.model.type.NullType;
 import java.util.*;
 
-
-
 public class GeneralStory {
-
-    Hero heroSelected;
 
     // methode principale (en fait dans les codes j2ee Spring boot par exemple, on n'a qu'une méthode qui se lance et ensuite y a rien d'autre
     // à faire dans le main méthode)
@@ -19,13 +14,13 @@ public class GeneralStory {
 
         //Create Instance Story
         GeneralStory story = new GeneralStory();
-        //Initialize Heroes and Monsters
+
+        //Initialize Heroes, Monsters & Potions
         List<Hero> heroes =  initHeroes();
         List<Monster> monsters = initMonsters();
+        List<Potion> potions = initPotions();
 
-        //Select turn of monsters randomly !!!!!!!!!!!!!!!!!!!!!!!!!!!!! /!\ TO SET
-        story.randomMonstersTurn(monsters);
-
+        //Start STORY
         System.out.println("Bonjour, bienvenu dans ce programme de bataille épique.");
         System.out.println("Veuillez commencer par choisir votre héro : ");
 
@@ -36,9 +31,14 @@ public class GeneralStory {
         story.selectHero(heroChoice);
         System.out.println("Vous avez choisi "+ story.heroSelected);
 
-        //------------------------------------
+        //SHOW FIRST MONSTER
         System.out.println("Votre premier adversaire est : ");
         story.showMonster(0);
+
+        //SHOW AVAILABLE POTIONS
+        story.showPotions(potions);
+        story.potionChoice = keyboard.next();
+
     }
 
     // METHODS ////////////////////////////////////////////////////////////////
@@ -69,6 +69,43 @@ public class GeneralStory {
         return monsters;
     }
 
+    // Initialization of Potions
+    boolean haveInitiative = false;
+    protected static List<Potion> initPotions(){
+        List<Potion> potions = new ArrayList<>();
+        HealthPotion healthPotion = new HealthPotion("Health Potion", true, 30);
+        potions.add(healthPotion);
+        AttackPotion attackPotion = new AttackPotion("Attack potion", true, 20, 3);
+        potions.add(attackPotion);
+        InitiativePotion initiativePotion = new InitiativePotion("Initiative potion", true, 3);
+        potions.add(initiativePotion);
+
+        return potions;
+    }
+
+    //SHOW POTIONS AVAILABLE
+    protected void showPotions(final List<Potion> potions){
+        System.out.println("Potions disponibles :");
+        //Create and fill List of potions available
+        List<Potion> potionsList = new ArrayList<>();
+        for(Potion potion : potions){
+            if(potion.hasPotion == true){
+                potionsList.add(potion);
+            }
+        }
+        //Print available potion
+        for(Potion potion : potionsList){
+            System.out.println((potionsList.indexOf(potion) + 1) + "/ " + potion.name);
+            System.out.println("Voulez vous prendre une potion ? O/N");
+        }
+    }
+
+    //Take Potion CHOICE
+    String potionChoice;
+    protected void takePotion(){
+
+    }
+
 
     //ShowHeroes METHOD////////////////
     protected void showHeroes(final  List<Hero> heroes){
@@ -76,6 +113,21 @@ public class GeneralStory {
             if (hero != null) {
                 System.out.println(hero.id + "/ " + hero.name + ": " + " Attaque : " + hero.att + ", Defense : " + hero.def + ", Vie : " + hero.health);
             }
+        }
+    }
+
+    //Select Hero Method------------------------------------------
+
+    Hero heroSelected;
+    protected void selectHero(int heroChoice){
+        switch (heroChoice){
+            case 1 : heroSelected = initHeroes().get(0);
+                break;
+            case 2 : heroSelected = initHeroes().get(1);
+                break;
+            case 3 : heroSelected = initHeroes().get(2);
+                break;
+            default: System.out.println("Veuillez sélectionner un hero valide");
         }
     }
 
@@ -108,16 +160,5 @@ public class GeneralStory {
         }
     }
 
-    //Select Hero Method------------------------------------------
-    protected void selectHero(int heroChoice){
-        switch (heroChoice){
-            case 1 : heroSelected = initHeroes().get(0);
-            break;
-            case 2 : heroSelected = initHeroes().get(1);
-            break;
-            case 3 : heroSelected = initHeroes().get(2);
-            break;
-            default: System.out.println("Veuillez sélectionner un hero valide");
-        }
-    }
+
 }
