@@ -21,6 +21,8 @@ public class GeneralStory {
         //Initialize Heroes and Monsters
         List<Hero> heroes =  initHeroes();
         List<Monster> monsters = initMonsters();
+
+        //Select turn of monsters randomly !!!!!!!!!!!!!!!!!!!!!!!!!!!!! /!\ TO SET
         story.randomMonstersTurn(monsters);
 
         System.out.println("Bonjour, bienvenu dans ce programme de bataille épique.");
@@ -31,13 +33,17 @@ public class GeneralStory {
         System.out.println("Votre choix : ");
         int heroChoice = keyboard.nextInt();
         story.selectHero(heroChoice);
-        System.out.println(story.heroSelected);
+        System.out.println("Vous avez choisi "+ story.heroSelected);
+
+        //------------------------------------
+        System.out.println("Votre premier adversaire est : ");
+        story.showMonster(0);
     }
 
     // METHODS ////////////////////////////////////////////////////////////////
 
     //Initialization of Heroes
-    private static List<Hero> initHeroes() {
+    protected static List<Hero> initHeroes() {
         List<Hero> heroes = new ArrayList<>();
         Hero roger = new Hero(1, "Roger", 60, 30, 100);
         heroes.add(roger);
@@ -50,19 +56,19 @@ public class GeneralStory {
     }
 
     //Initialization of Monsters
-    private static List<Monster> initMonsters(){
+    protected static List<Monster> initMonsters(){
         List<Monster> monsters = new ArrayList<>();
-        Monster zombie = new Monster(0,"Zombie", 30, 60,60);
+        Monster zombie = new Monster(1,"Zombie", 30, 60,60);
         monsters.add(zombie);
-        Monster bat = new Monster(0,"Bat", 10,10,20);
+        Monster bat = new Monster(2,"Bat", 10,10,20);
         monsters.add(bat);
-        Monster wolf = new Monster(0,"Wolf", 60, 40, 40);
+        Monster wolf = new Monster(3,"Wolf", 60, 40, 40);
         monsters.add(wolf);
 
         return monsters;
     }
     //ShowHeroes METHOD////////////////
-    private void showHeroes(final  List<Hero> heroes){
+    protected void showHeroes(final  List<Hero> heroes){
         for (Hero hero : heroes) {
             if (hero != null) {
                 System.out.println(hero.id + "/ " + hero.name + ": " + " Attaque : " + hero.att + ", Defense : " + hero.def + ", Vie : " + hero.health);
@@ -70,26 +76,41 @@ public class GeneralStory {
         }
     }
 
+    protected void showMonster(final int monsterIndex){
+        Monster monster = initMonsters().get(monsterIndex);
+        System.out.println(monster.name + ": " + " Attaque : " + monster.att + ", Defense : " + monster.def + ", Vie : " + monster.health);
+    }
+
     //Random Monsters METHOD///////////////////////////
     //TO END /!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\/!\
-    private void randomMonstersTurn(final List<Monster> monsters){
+    protected void randomMonstersTurn(final List<Monster> monsters){
         int monsterCount = 0;
         for(Monster monster : monsters){
             monsterCount++;
         }
         for(Monster monster : monsters){
+            //Array of monsters id
+            List<Integer> randomIdList = new ArrayList<>();
+            //Generate random id from 0 to number of monsters & add to randomIdList
            int randomId = (int)(Math.random()*(monsterCount)+1);
-           if(monster.id == 0 && monster.id != randomId){
-               monster.id = randomId;
-               System.out.println(monster.id + "/ " + monster.name + ": " + " Attaque : " + monster.att + ", Defense : " + monster.def + ", Vie : " + monster.health);
+           randomIdList.add(randomId);
+           System.out.println(randomId);
+           //Check if Id as already been assigned
+           for(int id : randomIdList){
+               if(randomId != id){
+                   monster.id = randomId;
+                   System.out.println(monster.id + "/ " + monster.name + ": " + " Attaque : " + monster.att + ", Defense : " + monster.def + ", Vie : " + monster.health);
+               }
            }
         }
+    //Random Monster turn Bis
+
 
 
     }
 
     //Select Hero Method
-    private void selectHero(int heroChoice){
+    protected void selectHero(int heroChoice){
         switch (heroChoice){
             case 1 : heroSelected = initHeroes().get(0);
             break;

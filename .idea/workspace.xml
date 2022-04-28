@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e0611ace-66a9-4896-a2fb-fd4d4a964fba" name="Changes" comment="New Features on GeneralStory class (Hero selection)&#10;To keep going on random selection for monsters">
+    <list default="true" id="e0611ace-66a9-4896-a2fb-fd4d4a964fba" name="Changes" comment="Keep on program random Selection for Monsters">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Battle/GeneralStory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Battle/GeneralStory.java" afterDir="false" />
     </list>
@@ -29,18 +29,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Team Reno/IdeaProjects/ScannerKeyboardTest/src/Battle&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/Team Reno/IdeaProjects/EpicGame",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Application.GeneralStory">
     <configuration name="Battle.Hero" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Battle.Hero" />
@@ -142,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650966409329</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Keep on program random Selection for Monsters">
+      <created>1650968558658</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1650968558658</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -160,6 +167,7 @@
     <MESSAGE value="creating Monsters and Hero Classes with some instances" />
     <MESSAGE value="To Fix calling &quot;ShowHero&quot; method ?!?" />
     <MESSAGE value="New Features on GeneralStory class (Hero selection)&#10;To keep going on random selection for monsters" />
-    <option name="LAST_COMMIT_MESSAGE" value="New Features on GeneralStory class (Hero selection)&#10;To keep going on random selection for monsters" />
+    <MESSAGE value="Keep on program random Selection for Monsters" />
+    <option name="LAST_COMMIT_MESSAGE" value="Keep on program random Selection for Monsters" />
   </component>
 </project>
