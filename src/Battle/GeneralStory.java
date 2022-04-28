@@ -103,9 +103,14 @@ public class GeneralStory {
     //Take Potion CHOICE
     String potionChoice;
     protected void takePotion(){
+        String potionChoiceLower = potionChoice.toLowerCase();
+        if(potionChoiceLower == "o" || potionChoiceLower =="n" ){
 
+        }else {
+            System.out.println("Veuillez saisir O ou N");
+            takePotion();
+        }
     }
-
 
     //ShowHeroes METHOD////////////////
     protected void showHeroes(final  List<Hero> heroes){
