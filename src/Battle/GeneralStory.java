@@ -1,5 +1,6 @@
 package Battle;
 
+import javax.lang.model.type.NullType;
 import java.util.*;
 
 
@@ -67,6 +68,8 @@ public class GeneralStory {
 
         return monsters;
     }
+
+
     //ShowHeroes METHOD////////////////
     protected void showHeroes(final  List<Hero> heroes){
         for (Hero hero : heroes) {
@@ -103,13 +106,9 @@ public class GeneralStory {
                }
            }
         }
-    //Random Monster turn Bis
-
-
-
     }
 
-    //Select Hero Method
+    //Select Hero Method------------------------------------------
     protected void selectHero(int heroChoice){
         switch (heroChoice){
             case 1 : heroSelected = initHeroes().get(0);
@@ -121,6 +120,4 @@ public class GeneralStory {
             default: System.out.println("Veuillez sélectionner un hero valide");
         }
     }
-
-
 }

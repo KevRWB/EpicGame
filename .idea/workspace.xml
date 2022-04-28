@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e0611ace-66a9-4896-a2fb-fd4d4a964fba" name="Changes" comment="Keep on program random Selection for Monsters">
+    <list default="true" id="e0611ace-66a9-4896-a2fb-fd4d4a964fba" name="Changes" comment="Begin to code Fight class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Battle/Fight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Battle/Fight.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Battle/GeneralStory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Battle/GeneralStory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Battle/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Battle/Hero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Battle/Potion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Battle/Potion.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +37,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/Team Reno/IdeaProjects/EpicGame",
+    "last_opened_file_path": "C:/Users/Team Reno/IdeaProjects/EpicGame/src/Battle/GeneralStory.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -149,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650968558658</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Begin to code Fight class">
+      <created>1651134412905</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1651134412905</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -168,6 +178,7 @@
     <MESSAGE value="To Fix calling &quot;ShowHero&quot; method ?!?" />
     <MESSAGE value="New Features on GeneralStory class (Hero selection)&#10;To keep going on random selection for monsters" />
     <MESSAGE value="Keep on program random Selection for Monsters" />
-    <option name="LAST_COMMIT_MESSAGE" value="Keep on program random Selection for Monsters" />
+    <MESSAGE value="Begin to code Fight class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Begin to code Fight class" />
   </component>
 </project>

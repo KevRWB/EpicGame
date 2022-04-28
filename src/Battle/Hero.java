@@ -1,7 +1,4 @@
 package Battle;
-
-import java.util.*;
-
 public class Hero {
     int id;
     String name;
